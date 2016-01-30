@@ -375,6 +375,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ELj-Ft-udq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="q2k-Ey-FaP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now please select which classes you would like to get notifications for" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGa-BQ-API">

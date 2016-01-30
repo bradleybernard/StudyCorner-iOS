@@ -64,11 +64,11 @@ class RegisterViewController: UIViewController {
                     // handle the results as JSON, without a bunch of nested if loops
                     let post = JSON(value)
                     print("The post is: " + post.description)
+                    // If post.success == true {
+                    let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("vc")
+                    self.navigationController?.pushViewController(registerVC, animated: true)
                 }
             }
-        
-        let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("vc")
-        self.navigationController?.pushViewController(registerVC, animated: true)
         
     }
     

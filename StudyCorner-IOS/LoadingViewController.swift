@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PusherSwift
 
 class LoadingViewController: UIViewController {
 
@@ -14,6 +15,9 @@ class LoadingViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = true
         // Do any additional setup after loading the view.
+        
+        let pusher = Pusher(key: "afb83e6e44409f2b1b3b")
+        pusher.connect()
     }
 
     override func didReceiveMemoryWarning() {
