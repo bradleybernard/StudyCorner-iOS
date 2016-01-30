@@ -10,6 +10,8 @@ import UIKit
 import PusherSwift
 
 class LoadingViewController: UIViewController {
+    
+    var user_id : String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +21,12 @@ class LoadingViewController: UIViewController {
         let pusher = Pusher(key: "afb83e6e44409f2b1b3b")
         pusher.connect()
         
-        let myChannel = pusher.subscribe("user")
+        let myChannel = pusher.subscribe("user" + self.user_id)
         
-        myChannel.bind("register-event", callback: { (data: AnyObject?) -> Void in
+        myChannel.bind("register", callback: { (data: AnyObject?) -> Void in
             print("working")
+            print(data)
+            print(JSON (data!))
         })
     }
     

@@ -10,10 +10,10 @@ import Foundation
 
 class SchoolClass{
     
-    var userID: String = ""
-    var password: String = ""
-    var className: String = ""
-    var classID: String = ""
+    var user_id: String = ""
+    var class_id: String = ""
+    var class_name: String = ""
+    var priority: Bool = true
     
     
 }

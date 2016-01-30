@@ -15,6 +15,7 @@ class LandingViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

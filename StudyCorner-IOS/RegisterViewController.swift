@@ -66,8 +66,10 @@ class RegisterViewController: UIViewController {
                 //print("The post is: " + post.description)
                 if post["success"].boolValue == true {
                     print(post)
-                    let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("vc")
-                    self.navigationController?.pushViewController(registerVC, animated: true)
+                    let loadingVC = self.storyboard!.instantiateViewControllerWithIdentifier("LoadingVC") as! LoadingViewController
+                    loadingVC.user_id = post["user_id"].stringValue
+                    
+                    self.navigationController?.pushViewController(loadingVC, animated: true)
                     
                 } else {
                     print("Error")
