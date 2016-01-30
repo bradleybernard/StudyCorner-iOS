@@ -7,17 +7,30 @@
 //
 
 import UIKit
+import  Alamofire
 
 class LandingViewController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = true
-
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func signInPressed(sender: AnyObject) {
+        let parameters = [
+            "email": email.text!,
+            "password": password.text!,
+        ]
+        
+        Alamofire.request(.POST, "https://httpbin.org/post", parameters: parameters)
+        // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
     }
     
     override func viewWillAppear(animated: Bool) {

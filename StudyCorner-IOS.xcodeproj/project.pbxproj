@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */; };
-		93B8D5597F3DCC95DEE531C2 /* Pods_StudyCorner_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A45C928A147B26A756DD5AD /* Pods_StudyCorner_IOS.framework */; };
+		434058CC34A5FCB751AC1E1B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5341D5FD47CB14FDD47C4D /* Pods.framework */; };
+		A2E2885A1DC1BDED4AFC4F98 /* Pods_StudyCorner_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0609267DF1F99941619048 /* Pods_StudyCorner_IOS.framework */; };
 		B868022F1C5C2E1E0069339D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B868022E1C5C2E1E0069339D /* AppDelegate.swift */; };
 		B86802311C5C2E1E0069339D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86802301C5C2E1E0069339D /* ViewController.swift */; };
 		B86802341C5C2E1E0069339D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86802321C5C2E1E0069339D /* Main.storyboard */; };
@@ -20,9 +21,8 @@
 
 /* Begin PBXFileReference section */
 		094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		1A45C928A147B26A756DD5AD /* Pods_StudyCorner_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCorner_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65BBF0152DACF769572D9619 /* Pods-StudyCorner-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.release.xcconfig"; sourceTree = "<group>"; };
-		8F2FD082895C8B1443100AED /* Pods-StudyCorner-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4B0609267DF1F99941619048 /* Pods_StudyCorner_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCorner_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C706C9F5CB13D9FE5D9D90B /* Pods-StudyCorner-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B868022B1C5C2E1E0069339D /* StudyCorner-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudyCorner-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B868022E1C5C2E1E0069339D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86802301C5C2E1E0069339D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +30,10 @@
 		B86802351C5C2E1E0069339D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B86802381C5C2E1E0069339D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B868023A1C5C2E1E0069339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE94B9E4E9671A3B65FF9D06 /* Pods-StudyCorner-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		D13014921C5C364F00ECD6C1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB5341D5FD47CB14FDD47C4D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,29 +41,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B8D5597F3DCC95DEE531C2 /* Pods_StudyCorner_IOS.framework in Frameworks */,
+				434058CC34A5FCB751AC1E1B /* Pods.framework in Frameworks */,
+				A2E2885A1DC1BDED4AFC4F98 /* Pods_StudyCorner_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23E2A64323B8B6A0D564D381 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8F2FD082895C8B1443100AED /* Pods-StudyCorner-IOS.debug.xcconfig */,
-				65BBF0152DACF769572D9619 /* Pods-StudyCorner-IOS.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		B86802221C5C2E1E0069339D = {
 			isa = PBXGroup;
 			children = (
 				B868022D1C5C2E1E0069339D /* StudyCorner-IOS */,
 				B868022C1C5C2E1E0069339D /* Products */,
-				23E2A64323B8B6A0D564D381 /* Pods */,
 				C2079D6FEC6FF93255E57851 /* Frameworks */,
+				EDA18DE88FDED7FC6DE10328 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,9 +86,19 @@
 		C2079D6FEC6FF93255E57851 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A45C928A147B26A756DD5AD /* Pods_StudyCorner_IOS.framework */,
+				FB5341D5FD47CB14FDD47C4D /* Pods.framework */,
+				4B0609267DF1F99941619048 /* Pods_StudyCorner_IOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDA18DE88FDED7FC6DE10328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C706C9F5CB13D9FE5D9D90B /* Pods-StudyCorner-IOS.debug.xcconfig */,
+				CE94B9E4E9671A3B65FF9D06 /* Pods-StudyCorner-IOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,12 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B868023D1C5C2E1E0069339D /* Build configuration list for PBXNativeTarget "StudyCorner-IOS" */;
 			buildPhases = (
-				4137C5A07069DB796007C5A6 /* Check Pods Manifest.lock */,
+				4AE478508379C88E8AE69324 /* Check Pods Manifest.lock */,
 				B86802271C5C2E1E0069339D /* Sources */,
 				B86802281C5C2E1E0069339D /* Frameworks */,
 				B86802291C5C2E1E0069339D /* Resources */,
-				2513E6BF5E6EDAF2043C60CE /* Embed Pods Frameworks */,
-				052B11F13E36F09CB07CE697 /* Copy Pods Resources */,
+				CB6601F4FD20304D060D71F3 /* Embed Pods Frameworks */,
+				6AE17175E37A14AB4C83CBC6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,7 +171,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		052B11F13E36F09CB07CE697 /* Copy Pods Resources */ = {
+		4AE478508379C88E8AE69324 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AE17175E37A14AB4C83CBC6 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,7 +201,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2513E6BF5E6EDAF2043C60CE /* Embed Pods Frameworks */ = {
+		CB6601F4FD20304D060D71F3 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,21 +214,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4137C5A07069DB796007C5A6 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -332,7 +336,7 @@
 		};
 		B868023E1C5C2E1E0069339D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F2FD082895C8B1443100AED /* Pods-StudyCorner-IOS.debug.xcconfig */;
+			baseConfigurationReference = 7C706C9F5CB13D9FE5D9D90B /* Pods-StudyCorner-IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "StudyCorner-IOS/Info.plist";
@@ -344,7 +348,7 @@
 		};
 		B868023F1C5C2E1E0069339D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65BBF0152DACF769572D9619 /* Pods-StudyCorner-IOS.release.xcconfig */;
+			baseConfigurationReference = CE94B9E4E9671A3B65FF9D06 /* Pods-StudyCorner-IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "StudyCorner-IOS/Info.plist";
