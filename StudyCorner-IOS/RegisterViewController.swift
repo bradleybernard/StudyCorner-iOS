@@ -15,7 +15,10 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     
+    @IBOutlet weak var goldPassword: UITextField!
+    
     @IBOutlet weak var password: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +37,27 @@ class RegisterViewController: UIViewController {
     @IBAction func completeEmail(sender: AnyObject) {
         email.text = cruzID.text!+"@ucsc.edu"
     }
+    
+    @IBAction func completePass(sender: AnyObject) {
+        password.text = goldPassword.text!
+    }
 
     @IBAction func submitPressed(sender: AnyObject) {
         let parameters = [
             "cruz_id": cruzID.text!,
             "email": email.text!,
             "password": password.text!,
+            "gold_password": goldPassword.text!,
         ]
         
         Alamofire.request(.POST, "http://45.33.18.17/api/user/create", parameters: parameters)
         // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
+        
+        let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("vc")
+        print(registerVC)
+        print(self.navigationController)
+        self.navigationController?.pushViewController(registerVC, animated: true)
+        
     }
     
     /*

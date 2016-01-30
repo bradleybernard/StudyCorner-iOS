@@ -55,7 +55,7 @@ class LandingViewController: UIViewController {
         let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("RegistrationVC") as! RegisterViewController
         print(registerVC)
         print(self.navigationController)
-        self.navigationController?.pushViewController(registerVC, animated: true);
+        self.navigationController?.pushViewController(registerVC, animated: true)
     }
 
     /*

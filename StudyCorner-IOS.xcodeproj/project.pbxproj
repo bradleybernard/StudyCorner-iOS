@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090A8A8B1C5C908B00BE6C49 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A8A8A1C5C908B00BE6C49 /* LoadingViewController.swift */; };
 		094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */; };
 		434058CC34A5FCB751AC1E1B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5341D5FD47CB14FDD47C4D /* Pods.framework */; };
 		A2E2885A1DC1BDED4AFC4F98 /* Pods_StudyCorner_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0609267DF1F99941619048 /* Pods_StudyCorner_IOS.framework */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090A8A8A1C5C908B00BE6C49 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4B0609267DF1F99941619048 /* Pods_StudyCorner_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCorner_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C706C9F5CB13D9FE5D9D90B /* Pods-StudyCorner-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				B868022E1C5C2E1E0069339D /* AppDelegate.swift */,
 				B86802301C5C2E1E0069339D /* ViewController.swift */,
 				B86802321C5C2E1E0069339D /* Main.storyboard */,
+				090A8A8A1C5C908B00BE6C49 /* LoadingViewController.swift */,
 				094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */,
 				D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */,
 				B86802351C5C2E1E0069339D /* Assets.xcassets */,
@@ -222,6 +225,7 @@
 			files = (
 				094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */,
 				B86802311C5C2E1E0069339D /* ViewController.swift in Sources */,
+				090A8A8B1C5C908B00BE6C49 /* LoadingViewController.swift in Sources */,
 				D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */,
 				B868022F1C5C2E1E0069339D /* AppDelegate.swift in Sources */,
 			);
