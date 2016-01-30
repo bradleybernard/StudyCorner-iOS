@@ -10,6 +10,8 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var prioritySwitch: UISwitch!
+    @IBOutlet weak var className: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

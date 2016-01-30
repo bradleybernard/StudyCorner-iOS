@@ -39,7 +39,8 @@ class LoadingViewController: UIViewController {
             // through the JSON object sent by the server
             var json = JSON (data!)
             var classList = [SchoolClass]()
-            for (key,subJson):(String, JSON) in json {
+            print(json["message"])
+            for (key,subJson):(String, JSON) in json["message"] {
                 //Do something you want
                 
                 classList.append(SchoolClass(user_id: subJson["user_id"].stringValue, class_id: subJson["class_id"].stringValue,class_name: subJson["class_name"].stringValue, priority: subJson["priority"].boolValue))

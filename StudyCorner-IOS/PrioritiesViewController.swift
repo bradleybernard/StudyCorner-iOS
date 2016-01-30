@@ -27,11 +27,18 @@ class PrioritiesViewController: UIViewController, UITableViewDataSource, UITable
         return classList.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) ->   UITableViewCell {
-        let cell = UITableViewCell()
-        let label = UILabel(frame: CGRect(x:0, y:0, width:200, height:50))
-        label.text = "Hello Man"
-        cell.addSubview(label)
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        //var cell:UITableViewCell = self.tableInfoQuake.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
+        //cell.textLabel?.text = self.classList[indexPath.row].user_id
+        //cell.textLabel?.text = UIImage(named:self.classList[indexPath.row])
+        
+        //return cell
+        let cell:TableViewCell = self.tableInfoQuake.dequeueReusableCellWithIdentifier("priorityCell") as! TableViewCell
+        
+        cell.className.text = classList[indexPath.row].class_name
+        
+        cell.prioritySwitch.on = classList[indexPath.row].priority
+        
         return cell
     }
     
