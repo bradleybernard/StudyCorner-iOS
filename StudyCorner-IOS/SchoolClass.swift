@@ -15,5 +15,10 @@ class SchoolClass{
     var class_name: String = ""
     var priority: Bool = true
     
-    
+    init(user_id: String, class_id: String, class_name: String, priority: Bool) {
+        self.user_id   = user_id
+        self.class_id = class_id
+        self.class_name  = class_name
+        self.priority = priority
+    }
 }

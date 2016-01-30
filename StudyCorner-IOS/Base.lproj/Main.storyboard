@@ -366,53 +366,48 @@
             </objects>
             <point key="canvasLocation" x="1579.5" y="311.25"/>
         </scene>
-        <!--Priority View Controller-->
-        <scene sceneID="V4n-SU-dwF">
+        <!--Priorities View Controller-->
+        <scene sceneID="NqM-jx-HH2">
             <objects>
-                <viewController storyboardIdentifier="PrioritySetupPage" id="RM1-YC-39t" customClass="PriorityViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PriorityVC" id="Fo0-ol-UH1" customClass="PrioritiesViewController" customModule="StudyCorner_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="q3W-Fe-L8m"/>
-                        <viewControllerLayoutGuide type="bottom" id="ELj-Ft-udq"/>
+                        <viewControllerLayoutGuide type="top" id="k2x-SL-Gkb"/>
+                        <viewControllerLayoutGuide type="bottom" id="DXp-qU-b4K"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="q2k-Ey-FaP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Ems-10-ZDf">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now please select which classes you would like to get notifications for" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGa-BQ-API">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="93" y="92" width="215" height="70"/>
-                                </variation>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zzc-KG-zqc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="frk-gb-IKb">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="80" y="237" width="240" height="128"/>
+                                    <rect key="frame" x="80" y="118" width="240" height="393"/>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Fo0-ol-UH1" id="fcK-0R-mTL"/>
+                                    <outlet property="delegate" destination="Fo0-ol-UH1" id="ATF-3o-K7y"/>
+                                </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.074509803920000006" green="0.7843137255" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="QGa-BQ-API"/>
-                                <exclude reference="zzc-KG-zqc"/>
+                                <exclude reference="frk-gb-IKb"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="QGa-BQ-API"/>
-                                <include reference="zzc-KG-zqc"/>
+                                <include reference="frk-gb-IKb"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableInfoQuake" destination="frk-gb-IKb" id="K1z-Oi-5ol"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TtY-sI-UX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSR-eq-n48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2238" y="311.25"/>
+            <point key="canvasLocation" x="2218.5" y="311.25"/>
         </scene>
         <!--Location-->
         <scene sceneID="vtr-wq-dwN">

@@ -11,23 +11,48 @@ import PusherSwift
 
 class LoadingViewController: UIViewController {
     
+    // Fields
     var user_id : String!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationController?.navigationBarHidden = true
-        // Do any additional setup after loading the view.
         
+        super.viewDidLoad()
+    
+        // Hides the nav bar
+        self.navigationController?.navigationBarHidden = true
+        
+        // Connects to the pusher to communicate with the server
         let pusher = Pusher(key: "afb83e6e44409f2b1b3b")
         pusher.connect()
         
+        // Subscribes to the channel based on the user_id sent
+        // sent back from the server
         let myChannel = pusher.subscribe("user" + self.user_id)
         
+        // Begins listening to an event from the server
         myChannel.bind("register", callback: { (data: AnyObject?) -> Void in
+            
             print("working")
-            print(data)
             print(JSON (data!))
+            
+            // Creates an array with SchoolClass objects by reading
+            // through the JSON object sent by the server
+            var json = JSON (data!)
+            var classList = [SchoolClass]()
+            for (key,subJson):(String, JSON) in json {
+                //Do something you want
+                
+                classList.append(SchoolClass(user_id: subJson["user_id"].stringValue, class_id: subJson["class_id"].stringValue,class_name: subJson["class_name"].stringValue, priority: subJson["priority"].boolValue))
+            }
+            
+            // Changes view to the next page
+            var priorityVC = self.storyboard?.instantiateViewControllerWithIdentifier("PriorityVC") as! PrioritiesViewController
+            
+            priorityVC.classList = classList
+            
+            self.navigationController?.pushViewController(priorityVC, animated: true)
         })
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,15 +60,5 @@ class LoadingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

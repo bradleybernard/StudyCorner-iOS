@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		090A8A8B1C5C908B00BE6C49 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A8A8A1C5C908B00BE6C49 /* LoadingViewController.swift */; };
+		092BF0AF1C5D618B006CCFA0 /* PrioritiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BF0AE1C5D618B006CCFA0 /* PrioritiesViewController.swift */; };
 		094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */; };
 		3C564AD7E92C910456E99A44 /* Pods_StudyCorner_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0609267DF1F99941619048 /* Pods_StudyCorner_IOS.framework */; };
 		B868022F1C5C2E1E0069339D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B868022E1C5C2E1E0069339D /* AppDelegate.swift */; };
@@ -16,7 +17,6 @@
 		B86802361C5C2E1E0069339D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86802351C5C2E1E0069339D /* Assets.xcassets */; };
 		B86802391C5C2E1E0069339D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86802371C5C2E1E0069339D /* LaunchScreen.storyboard */; };
 		D10E74981C5C9A6E0044A8CB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E74971C5C9A6E0044A8CB /* DashboardViewController.swift */; };
-		D119CEB91C5CB6C9003EF77F /* PriorityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119CEB81C5CB6C9003EF77F /* PriorityViewController.swift */; };
 		D119CEBB1C5CC6AD003EF77F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */; };
 		D119CEBD1C5CC9EA003EF77F /* SchoolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */; };
 		D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */; };
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		090A8A8A1C5C908B00BE6C49 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		092BF0AE1C5D618B006CCFA0 /* PrioritiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrioritiesViewController.swift; sourceTree = "<group>"; };
 		094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4B0609267DF1F99941619048 /* Pods_StudyCorner_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyCorner_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C706C9F5CB13D9FE5D9D90B /* Pods-StudyCorner-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		B868023A1C5C2E1E0069339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE94B9E4E9671A3B65FF9D06 /* Pods-StudyCorner-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		D10E74971C5C9A6E0044A8CB /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		D119CEB81C5CB6C9003EF77F /* PriorityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityViewController.swift; sourceTree = "<group>"; };
 		D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolClass.swift; sourceTree = "<group>"; };
 		D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -99,11 +99,11 @@
 				B86802321C5C2E1E0069339D /* Main.storyboard */,
 				D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */,
 				D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */,
-				D119CEB81C5CB6C9003EF77F /* PriorityViewController.swift */,
 				D10E74971C5C9A6E0044A8CB /* DashboardViewController.swift */,
 				090A8A8A1C5C908B00BE6C49 /* LoadingViewController.swift */,
 				094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */,
 				D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */,
+				092BF0AE1C5D618B006CCFA0 /* PrioritiesViewController.swift */,
 				B86802351C5C2E1E0069339D /* Assets.xcassets */,
 				B86802371C5C2E1E0069339D /* LaunchScreen.storyboard */,
 				B868023A1C5C2E1E0069339D /* Info.plist */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D119CEB91C5CB6C9003EF77F /* PriorityViewController.swift in Sources */,
+				092BF0AF1C5D618B006CCFA0 /* PrioritiesViewController.swift in Sources */,
 				094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */,
 				D10E74981C5C9A6E0044A8CB /* DashboardViewController.swift in Sources */,
 				D119CEBB1C5CC6AD003EF77F /* TableViewCell.swift in Sources */,

@@ -22,9 +22,22 @@ class LandingViewController: UIViewController {
         self.navigationController?.navigationBarHidden = true
         
         // Do any additional setup after loading the view.
+        
     }
     
-    @IBAction func signInPressed(sender: AnyObject) {
+    // Hides the nav bar
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+        
+    }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
+    
+    // Sends user data to server when login is pressed
+    @IBAction func loginPressed(sender: AnyObject) {
         let parameters = [
             "email": email.text!,
             "password": password.text!,
@@ -34,39 +47,15 @@ class LandingViewController: UIViewController {
         // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBarHidden = true
-        
-    }
-
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.navigationController?.navigationBarHidden = false
+    // Changes view to the register page
+    @IBAction func registerPressed(sender: AnyObject) {
+        let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("RegistrationVC") as! RegisterViewController
+        self.navigationController?.pushViewController(registerVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func loginPressed(sender: AnyObject) {
-    }
-    
-    @IBAction func registerPressed(sender: AnyObject) {
-        let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("RegistrationVC") as! RegisterViewController
-        self.navigationController?.pushViewController(registerVC, animated: true)
-    }
-    
-//    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-//    var x = appDelegate.switchToTabBar()
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
