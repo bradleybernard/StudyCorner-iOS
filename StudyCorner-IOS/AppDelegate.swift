@@ -18,6 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
+    
+    func switchToTabBar(){
+        
+        // get your storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // instantiate your desired ViewController
+        let rootController = storyboard.instantiateViewControllerWithIdentifier("DashboardVC") as! DashboardViewController
+        
+        // Because self.window is an optional you should check it's value first and assign your rootViewController
+        if let window = self.window {
+            window.rootViewController = rootController
+        }
+    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

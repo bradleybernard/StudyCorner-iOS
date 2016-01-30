@@ -16,6 +16,9 @@
 		B86802361C5C2E1E0069339D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86802351C5C2E1E0069339D /* Assets.xcassets */; };
 		B86802391C5C2E1E0069339D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86802371C5C2E1E0069339D /* LaunchScreen.storyboard */; };
 		D10E74981C5C9A6E0044A8CB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E74971C5C9A6E0044A8CB /* DashboardViewController.swift */; };
+		D119CEB91C5CB6C9003EF77F /* PriorityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119CEB81C5CB6C9003EF77F /* PriorityViewController.swift */; };
+		D119CEBB1C5CC6AD003EF77F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */; };
+		D119CEBD1C5CC9EA003EF77F /* SchoolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */; };
 		D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */; };
 		D1DF7BF31C5CA8C200F1EFDA /* swiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */; };
 		D1DF7BFB1C5CADA600F1EFDA /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DF7BF61C5CADA600F1EFDA /* home.png */; };
@@ -39,6 +42,9 @@
 		B868023A1C5C2E1E0069339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE94B9E4E9671A3B65FF9D06 /* Pods-StudyCorner-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		D10E74971C5C9A6E0044A8CB /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		D119CEB81C5CB6C9003EF77F /* PriorityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityViewController.swift; sourceTree = "<group>"; };
+		D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolClass.swift; sourceTree = "<group>"; };
 		D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftyJSON.swift; sourceTree = SOURCE_ROOT; };
 		D1DF7BF61C5CADA600F1EFDA /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
@@ -91,6 +97,9 @@
 				B86802301C5C2E1E0069339D /* ViewController.swift */,
 				D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */,
 				B86802321C5C2E1E0069339D /* Main.storyboard */,
+				D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */,
+				D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */,
+				D119CEB81C5CB6C9003EF77F /* PriorityViewController.swift */,
 				D10E74971C5C9A6E0044A8CB /* DashboardViewController.swift */,
 				090A8A8A1C5C908B00BE6C49 /* LoadingViewController.swift */,
 				094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */,
@@ -247,10 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D119CEB91C5CB6C9003EF77F /* PriorityViewController.swift in Sources */,
 				094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */,
 				D10E74981C5C9A6E0044A8CB /* DashboardViewController.swift in Sources */,
+				D119CEBB1C5CC6AD003EF77F /* TableViewCell.swift in Sources */,
 				D1DF7BF31C5CA8C200F1EFDA /* swiftyJSON.swift in Sources */,
 				B86802311C5C2E1E0069339D /* ViewController.swift in Sources */,
+				D119CEBD1C5CC9EA003EF77F /* SchoolClass.swift in Sources */,
 				090A8A8B1C5C908B00BE6C49 /* LoadingViewController.swift in Sources */,
 				D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */,
 				B868022F1C5C2E1E0069339D /* AppDelegate.swift in Sources */,

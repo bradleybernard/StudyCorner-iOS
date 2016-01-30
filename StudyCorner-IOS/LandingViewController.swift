@@ -54,7 +54,10 @@ class LandingViewController: UIViewController {
         let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("RegistrationVC") as! RegisterViewController
         self.navigationController?.pushViewController(registerVC, animated: true)
     }
-
+    
+//    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//    var x = appDelegate.switchToTabBar()
+    
     /*
     // MARK: - Navigation
 

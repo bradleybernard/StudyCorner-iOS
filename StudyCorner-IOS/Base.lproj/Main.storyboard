@@ -319,7 +319,7 @@
         <!--Loading View Controller-->
         <scene sceneID="TUY-S9-oHj">
             <objects>
-                <viewController storyboardIdentifier="vc" id="JnJ-dV-JCN" customClass="LoadingViewController" customModule="StudyCorner_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadingVC" id="JnJ-dV-JCN" customClass="LoadingViewController" customModule="StudyCorner_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J7x-0d-eoe"/>
                         <viewControllerLayoutGuide type="bottom" id="R3o-mQ-4dC"/>
@@ -512,7 +512,7 @@
         <!--Dashboard View Controller-->
         <scene sceneID="Hj6-ya-20i">
             <objects>
-                <tabBarController id="MbS-Ew-Ngn" customClass="DashboardViewController" customModule="StudyCorner_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="DashboardVC" id="MbS-Ew-Ngn" customClass="DashboardViewController" customModule="StudyCorner_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="FV5-Zu-ZPr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

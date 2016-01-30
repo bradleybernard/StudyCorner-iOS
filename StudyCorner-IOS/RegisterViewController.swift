@@ -51,25 +51,29 @@ class RegisterViewController: UIViewController {
         ]
         
         Alamofire.request(.POST, "http://45.33.18.17/api/user/create", parameters: parameters)
-        // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
-            .responseJSON { response in
-                guard response.result.error == nil else {
-                    // got an error in getting the data, need to handle it
-                    print("error calling GET on /posts/1")
-                    print(response.result.error!)
-                    return
-                }
-                
-                if let value: AnyObject = response.result.value {
-                    // handle the results as JSON, without a bunch of nested if loops
-                    let post = JSON(value)
-                    print("The post is: " + post.description)
-                    // If post.success == true {
+            // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
+        .responseJSON { response in
+            guard response.result.error == nil else {
+                // got an error in getting the data, need to handle it
+                print("error calling GET on /posts/1")
+                print(response.result.error!)
+                return
+            }
+            
+            if let value: AnyObject = response.result.value {
+                // handle the results as JSON, without a bunch of nested if loops
+                let post = JSON(value)
+                //print("The post is: " + post.description)
+                if post["success"].boolValue == true {
+                    print(post)
                     let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("vc")
                     self.navigationController?.pushViewController(registerVC, animated: true)
+                    
+                } else {
+                    print("Error")
                 }
             }
-        
+        }
     }
     
     /*

@@ -1,18 +1,18 @@
 //
-//  DashboardViewController.swift
+//  PriorityViewController.swift
 //  StudyCorner-IOS
 //
-//  Created by Aidan Gadberry on 1/29/16.
+//  Created by Aidan Gadberry on 1/30/16.
 //  Copyright © 2016 Brad Bernard. All rights reserved.
 //
 
 import UIKit
 
-class DashboardViewController: UITabBarController {
+class PriorityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
 

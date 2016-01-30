@@ -18,8 +18,14 @@ class LoadingViewController: UIViewController {
         
         let pusher = Pusher(key: "afb83e6e44409f2b1b3b")
         pusher.connect()
+        
+        let myChannel = pusher.subscribe("user")
+        
+        myChannel.bind("register-event", callback: { (data: AnyObject?) -> Void in
+            print("working")
+        })
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
