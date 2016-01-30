@@ -16,13 +16,13 @@
 		B86802361C5C2E1E0069339D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86802351C5C2E1E0069339D /* Assets.xcassets */; };
 		B86802391C5C2E1E0069339D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86802371C5C2E1E0069339D /* LaunchScreen.storyboard */; };
 		D10E74981C5C9A6E0044A8CB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10E74971C5C9A6E0044A8CB /* DashboardViewController.swift */; };
-		D10E749A1C5C9E1E0044A8CB /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D10E74991C5C9E1E0044A8CB /* home.png */; };
-		D10E749C1C5CA0330044A8CB /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = D10E749B1C5CA0330044A8CB /* location.png */; };
-		D10E749E1C5CA1AF0044A8CB /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D10E749D1C5CA1AF0044A8CB /* clock.png */; };
-		D10E74A01C5CA2CB0044A8CB /* class.png in Resources */ = {isa = PBXBuildFile; fileRef = D10E749F1C5CA2CB0044A8CB /* class.png */; };
-		D10E74A21C5CA4360044A8CB /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D10E74A11C5CA4360044A8CB /* settings.png */; };
 		D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */; };
 		D1DF7BF31C5CA8C200F1EFDA /* swiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */; };
+		D1DF7BFB1C5CADA600F1EFDA /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DF7BF61C5CADA600F1EFDA /* home.png */; };
+		D1DF7BFC1C5CADA600F1EFDA /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DF7BF71C5CADA600F1EFDA /* location.png */; };
+		D1DF7BFD1C5CADA600F1EFDA /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DF7BF81C5CADA600F1EFDA /* clock.png */; };
+		D1DF7BFE1C5CADA600F1EFDA /* class.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DF7BF91C5CADA600F1EFDA /* class.png */; };
+		D1DF7BFF1C5CADA600F1EFDA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DF7BFA1C5CADA600F1EFDA /* settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +39,13 @@
 		B868023A1C5C2E1E0069339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE94B9E4E9671A3B65FF9D06 /* Pods-StudyCorner-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		D10E74971C5C9A6E0044A8CB /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		D10E74991C5C9E1E0044A8CB /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../../home.png; sourceTree = "<group>"; };
-		D10E749B1C5CA0330044A8CB /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = location.png; path = ../../../../../location.png; sourceTree = "<group>"; };
-		D10E749D1C5CA1AF0044A8CB /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock.png; path = ../../../../../clock.png; sourceTree = "<group>"; };
-		D10E749F1C5CA2CB0044A8CB /* class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = class.png; path = ../../../../../class.png; sourceTree = "<group>"; };
-		D10E74A11C5CA4360044A8CB /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = ../../../../../settings.png; sourceTree = "<group>"; };
 		D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftyJSON.swift; sourceTree = SOURCE_ROOT; };
+		D1DF7BF61C5CADA600F1EFDA /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		D1DF7BF71C5CADA600F1EFDA /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		D1DF7BF81C5CADA600F1EFDA /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		D1DF7BF91C5CADA600F1EFDA /* class.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class.png; sourceTree = "<group>"; };
+		D1DF7BFA1C5CADA600F1EFDA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		FB5341D5FD47CB14FDD47C4D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,11 +82,11 @@
 		B868022D1C5C2E1E0069339D /* StudyCorner-IOS */ = {
 			isa = PBXGroup;
 			children = (
-				D10E74991C5C9E1E0044A8CB /* home.png */,
-				D10E749B1C5CA0330044A8CB /* location.png */,
-				D10E749D1C5CA1AF0044A8CB /* clock.png */,
-				D10E749F1C5CA2CB0044A8CB /* class.png */,
-				D10E74A11C5CA4360044A8CB /* settings.png */,
+				D1DF7BF61C5CADA600F1EFDA /* home.png */,
+				D1DF7BF71C5CADA600F1EFDA /* location.png */,
+				D1DF7BF81C5CADA600F1EFDA /* clock.png */,
+				D1DF7BF91C5CADA600F1EFDA /* class.png */,
+				D1DF7BFA1C5CADA600F1EFDA /* settings.png */,
 				B868022E1C5C2E1E0069339D /* AppDelegate.swift */,
 				B86802301C5C2E1E0069339D /* ViewController.swift */,
 				D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */,
@@ -181,12 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D10E74A21C5CA4360044A8CB /* settings.png in Resources */,
-				D10E749E1C5CA1AF0044A8CB /* clock.png in Resources */,
-				D10E749A1C5C9E1E0044A8CB /* home.png in Resources */,
+				D1DF7BFF1C5CADA600F1EFDA /* settings.png in Resources */,
+				D1DF7BFD1C5CADA600F1EFDA /* clock.png in Resources */,
+				D1DF7BFB1C5CADA600F1EFDA /* home.png in Resources */,
 				B86802391C5C2E1E0069339D /* LaunchScreen.storyboard in Resources */,
-				D10E749C1C5CA0330044A8CB /* location.png in Resources */,
-				D10E74A01C5CA2CB0044A8CB /* class.png in Resources */,
+				D1DF7BFC1C5CADA600F1EFDA /* location.png in Resources */,
+				D1DF7BFE1C5CADA600F1EFDA /* class.png in Resources */,
 				B86802361C5C2E1E0069339D /* Assets.xcassets in Resources */,
 				B86802341C5C2E1E0069339D /* Main.storyboard in Resources */,
 			);
