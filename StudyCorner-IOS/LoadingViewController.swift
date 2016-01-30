@@ -32,9 +32,6 @@ class LoadingViewController: UIViewController {
         // Begins listening to an event from the server
         myChannel.bind("register", callback: { (data: AnyObject?) -> Void in
             
-            print("working")
-            print(JSON (data!))
-            
             // Creates an array with SchoolClass objects by reading
             // through the JSON object sent by the server
             var json = JSON (data!)

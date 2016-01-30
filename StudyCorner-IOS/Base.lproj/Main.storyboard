@@ -401,6 +401,10 @@
                                                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                                         <rect key="frame" x="303" y="6" width="51" height="31"/>
                                                     </variation>
+                                                    <connections>
+                                                        <action selector="prioritySwitch:" destination="Fo0-ol-UH1" eventType="valueChanged" id="lmy-Wa-rQv"/>
+                                                        <action selector="switch:" destination="Fo0-ol-UH1" eventType="valueChanged" id="bre-hp-79i"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <variation key="default">
@@ -423,7 +427,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="205" width="360" height="393"/>
+                                    <rect key="frame" x="20" y="238" width="360" height="393"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="Fo0-ol-UH1" id="fcK-0R-mTL"/>
@@ -436,7 +440,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="167" width="118" height="30"/>
+                                    <rect key="frame" x="20" y="200" width="118" height="30"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please switch off classes you would not like to get notifications for" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbT-lU-Ozp">
@@ -445,9 +449,20 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="97" y="57" width="206" height="87"/>
+                                    <rect key="frame" x="97" y="75" width="206" height="87"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbv-8N-HVO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.36862745099999999" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="140" y="683" width="120" height="40"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.074509803920000006" green="0.7843137255" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -455,6 +470,7 @@
                                 <exclude reference="frk-gb-IKb"/>
                                 <exclude reference="EnZ-yO-3Ag"/>
                                 <exclude reference="GbT-lU-Ozp"/>
+                                <exclude reference="Qbv-8N-HVO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -462,6 +478,7 @@
                                 <include reference="frk-gb-IKb"/>
                                 <include reference="EnZ-yO-3Ag"/>
                                 <include reference="GbT-lU-Ozp"/>
+                                <include reference="Qbv-8N-HVO"/>
                             </mask>
                         </variation>
                     </view>

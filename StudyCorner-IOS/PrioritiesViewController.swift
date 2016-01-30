@@ -14,6 +14,9 @@ class PrioritiesViewController: UIViewController, UITableViewDataSource, UITable
     
     var classList = [SchoolClass] ()
     
+    @IBAction func prioritySwitch(sender: AnyObject) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
