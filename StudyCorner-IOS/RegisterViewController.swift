@@ -1,19 +1,19 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  StudyCorner-IOS
 //
-//  Created by Aidan Gadberry on 1/29/16.
+//  Created by Spencer Albrecht on 1/29/16.
 //  Copyright © 2016 Brad Bernard. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Login"
+        self.title = "Register"
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+
     */
 
 }

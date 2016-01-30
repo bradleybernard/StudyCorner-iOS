@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */; };
 		B868022F1C5C2E1E0069339D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B868022E1C5C2E1E0069339D /* AppDelegate.swift */; };
 		B86802311C5C2E1E0069339D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86802301C5C2E1E0069339D /* ViewController.swift */; };
 		B86802341C5C2E1E0069339D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86802321C5C2E1E0069339D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B868022B1C5C2E1E0069339D /* StudyCorner-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudyCorner-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B868022E1C5C2E1E0069339D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86802301C5C2E1E0069339D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				B868022E1C5C2E1E0069339D /* AppDelegate.swift */,
 				B86802301C5C2E1E0069339D /* ViewController.swift */,
 				B86802321C5C2E1E0069339D /* Main.storyboard */,
+				094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */,
 				D13014921C5C364F00ECD6C1 /* LoginViewController.swift */,
 				D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */,
 				B86802351C5C2E1E0069339D /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13014931C5C364F00ECD6C1 /* LoginViewController.swift in Sources */,
+				094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */,
 				B86802311C5C2E1E0069339D /* ViewController.swift in Sources */,
 				D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */,
 				B868022F1C5C2E1E0069339D /* AppDelegate.swift in Sources */,

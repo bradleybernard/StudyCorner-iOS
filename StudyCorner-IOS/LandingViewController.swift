@@ -15,20 +15,37 @@ class LandingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBarHidden = true
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+        
+    }
 
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBAction func loginPressed(sender: AnyObject) {
         print("test")
+        let loginVC = self.storyboard!.instantiateViewControllerWithIdentifier("LoginVC") as! LoginViewController
+        self.navigationController?.pushViewController(loginVC, animated: true);
     }
     
     @IBAction func registerPressed(sender: AnyObject) {
         print("reg")
+        let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("RegistrationVC") as! RegisterViewController
+        print(registerVC)
+        print(self.navigationController)
+        self.navigationController?.pushViewController(registerVC, animated: true);
     }
 
     /*
