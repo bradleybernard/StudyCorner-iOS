@@ -5,5 +5,6 @@ use_frameworks!
 
 target 'StudyCorner-IOS' do
 pod 'Alamofire', '~> 3.0'
+pod 'PusherSwift'
 end
 

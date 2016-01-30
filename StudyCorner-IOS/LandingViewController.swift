@@ -51,10 +51,7 @@ class LandingViewController: UIViewController {
     }
     
     @IBAction func registerPressed(sender: AnyObject) {
-        print("reg")
         let registerVC = self.storyboard!.instantiateViewControllerWithIdentifier("RegistrationVC") as! RegisterViewController
-        print(registerVC)
-        print(self.navigationController)
         self.navigationController?.pushViewController(registerVC, animated: true)
     }
 

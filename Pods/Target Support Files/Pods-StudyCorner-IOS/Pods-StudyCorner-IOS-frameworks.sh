@@ -85,7 +85,15 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-StudyCorner-IOS/Alamofire.framework"
+  install_framework "Pods-StudyCorner-IOS/CryptoSwift.framework"
+  install_framework "Pods-StudyCorner-IOS/PusherSwift.framework"
+  install_framework "Pods-StudyCorner-IOS/ReachabilitySwift.framework"
+  install_framework "Pods-StudyCorner-IOS/Starscream.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-StudyCorner-IOS/Alamofire.framework"
+  install_framework "Pods-StudyCorner-IOS/CryptoSwift.framework"
+  install_framework "Pods-StudyCorner-IOS/PusherSwift.framework"
+  install_framework "Pods-StudyCorner-IOS/ReachabilitySwift.framework"
+  install_framework "Pods-StudyCorner-IOS/Starscream.framework"
 fi
