@@ -168,16 +168,24 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="98" width="67" height="21"/>
+                                    <rect key="frame" x="72" y="136" width="67" height="21"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sslug" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIc-cV-aEo">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="72" y="165" width="257" height="30"/>
+                                </variation>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-Tk-B5c">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="206" width="41" height="21"/>
+                                    <rect key="frame" x="72" y="244" width="41" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEE-VS-DPS">
@@ -186,17 +194,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="363" width="74" height="21"/>
+                                    <rect key="frame" x="72" y="401" width="74" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sammyslug@ucsc.edu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKi-aF-JNP">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="235" width="257" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="RadioButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-z3-BbL">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.011764705882352941" green="0.36862745098039218" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
@@ -205,7 +205,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="283" width="119" height="30"/>
+                                    <rect key="frame" x="72" y="273" width="119" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="completeEmail:" destination="hqJ-eo-6sM" eventType="touchUpInside" id="AFN-l5-3Ed"/>
@@ -216,7 +216,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="392" width="257" height="30"/>
+                                    <rect key="frame" x="72" y="430" width="257" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdF-jE-Uis">
@@ -233,12 +233,12 @@
                                     <action selector="submitPressed:" destination="hqJ-eo-6sM" eventType="touchUpInside" id="VHV-Mf-TtP"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sslug" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIc-cV-aEo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sammyslug@ucsc.edu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKi-aF-JNP">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="127" width="257" height="30"/>
+                                    <rect key="frame" x="72" y="316" width="257" height="30"/>
                                 </variation>
                             </textField>
                         </subviews>
@@ -246,25 +246,25 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="kko-ea-kzs"/>
+                                <exclude reference="NIc-cV-aEo"/>
                                 <exclude reference="CUi-Tk-B5c"/>
                                 <exclude reference="zEE-VS-DPS"/>
-                                <exclude reference="SKi-aF-JNP"/>
                                 <exclude reference="U6T-z3-BbL"/>
                                 <exclude reference="8rS-G2-ne9"/>
                                 <exclude reference="bdF-jE-Uis"/>
-                                <exclude reference="NIc-cV-aEo"/>
+                                <exclude reference="SKi-aF-JNP"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="kko-ea-kzs"/>
+                                <include reference="NIc-cV-aEo"/>
                                 <include reference="CUi-Tk-B5c"/>
                                 <include reference="zEE-VS-DPS"/>
-                                <include reference="SKi-aF-JNP"/>
                                 <include reference="U6T-z3-BbL"/>
                                 <include reference="8rS-G2-ne9"/>
                                 <include reference="bdF-jE-Uis"/>
-                                <include reference="NIc-cV-aEo"/>
+                                <include reference="SKi-aF-JNP"/>
                             </mask>
                         </variation>
                     </view>

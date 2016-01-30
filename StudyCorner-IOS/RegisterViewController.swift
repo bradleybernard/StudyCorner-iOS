@@ -37,12 +37,12 @@ class RegisterViewController: UIViewController {
 
     @IBAction func submitPressed(sender: AnyObject) {
         let parameters = [
-            "id": cruzID.text!,
+            "cruz_id": cruzID.text!,
             "email": email.text!,
             "password": password.text!,
         ]
         
-        Alamofire.request(.POST, "https://httpbin.org/post", parameters: parameters)
+        Alamofire.request(.POST, "http://45.33.18.17/api/user/create", parameters: parameters)
         // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
     }
     

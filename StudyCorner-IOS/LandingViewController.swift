@@ -29,7 +29,7 @@ class LandingViewController: UIViewController {
             "password": password.text!,
         ]
         
-        Alamofire.request(.POST, "https://httpbin.org/post", parameters: parameters)
+        Alamofire.request(.POST, "http://45.33.18.17/api/user/create", parameters: parameters)
         // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
     }
     
@@ -48,9 +48,6 @@ class LandingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func loginPressed(sender: AnyObject) {
-        print("test")
-        let loginVC = self.storyboard!.instantiateViewControllerWithIdentifier("LoginVC") as! LoginViewController
-        self.navigationController?.pushViewController(loginVC, animated: true);
     }
     
     @IBAction func registerPressed(sender: AnyObject) {

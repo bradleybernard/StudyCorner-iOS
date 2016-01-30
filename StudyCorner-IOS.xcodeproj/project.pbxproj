@@ -16,7 +16,6 @@
 		B86802361C5C2E1E0069339D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86802351C5C2E1E0069339D /* Assets.xcassets */; };
 		B86802391C5C2E1E0069339D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86802371C5C2E1E0069339D /* LaunchScreen.storyboard */; };
 		D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */; };
-		D13014931C5C364F00ECD6C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13014921C5C364F00ECD6C1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		B868023A1C5C2E1E0069339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE94B9E4E9671A3B65FF9D06 /* Pods-StudyCorner-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
-		D13014921C5C364F00ECD6C1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB5341D5FD47CB14FDD47C4D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,7 +72,6 @@
 				B86802301C5C2E1E0069339D /* ViewController.swift */,
 				B86802321C5C2E1E0069339D /* Main.storyboard */,
 				094FECE51C5C3B2000CD94F0 /* RegisterViewController.swift */,
-				D13014921C5C364F00ECD6C1 /* LoginViewController.swift */,
 				D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */,
 				B86802351C5C2E1E0069339D /* Assets.xcassets */,
 				B86802371C5C2E1E0069339D /* LaunchScreen.storyboard */,
@@ -223,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13014931C5C364F00ECD6C1 /* LoginViewController.swift in Sources */,
 				094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */,
 				B86802311C5C2E1E0069339D /* ViewController.swift in Sources */,
 				D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */,
