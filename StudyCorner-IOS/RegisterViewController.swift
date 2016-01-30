@@ -10,6 +10,10 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var cruzID: UITextField!
+    
+    @IBOutlet weak var email: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +27,10 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+    @IBAction func completeEmail(sender: AnyObject) {
+        email.text = cruzID.text!+"@ucsc.edu"
+    }
 
     /*
     // MARK: - Navigation

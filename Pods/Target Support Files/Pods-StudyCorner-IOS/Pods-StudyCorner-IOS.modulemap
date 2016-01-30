@@ -1,0 +1,6 @@
+framework module Pods_StudyCorner_IOS {
+  umbrella header "Pods-StudyCorner-IOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
