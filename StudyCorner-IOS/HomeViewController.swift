@@ -88,8 +88,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     print(post)
                     
                     let dateFormatter = NSDateFormatter()
-                    dateFormatter.timeStyle = .MediumStyle
-                    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                     
                     
                     
@@ -98,10 +96,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         print(key)
                         print(subJson)
                         
+                        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                        
+                        let adate = dateFormatter.dateFromString(subJson["time_start"].stringValue)!
+                        
+                        dateFormatter.timeStyle = .ShortStyle
+                        dateFormatter.dateStyle = .NoStyle
+                        
+                        let time_start = dateFormatter.stringFromDate(adate)
+                        
 //                        if let datePublished = dateFormatter.dateFromString(subJson["start_time"].stringValue) {
                             //println(datePublished)   // "2015-06-30 17:30:36 +0000" dateFormatter.stringFromDate(datePublished)
                             self.sessions.append(
-                                SchoolSession(title: subJson["title"].stringValue, location: subJson["location"].stringValue, time: "NOW", people: subJson["going_count"].intValue)
+                                SchoolSession(title: subJson["title"].stringValue, location: subJson["location"].stringValue, time: time_start, people: subJson["going_count"].intValue)
                             )
                             
                             print(subJson["title"].stringValue)
