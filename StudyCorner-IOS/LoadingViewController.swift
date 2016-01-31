@@ -8,6 +8,7 @@
 
 import UIKit
 import PusherSwift
+import SwiftSpinner
 
 class LoadingViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class LoadingViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        SwiftSpinner.show("Retrieving your classes", animated: true)
     
         // Hides the nav bar
         self.navigationController?.navigationBarHidden = true
@@ -47,6 +50,9 @@ class LoadingViewController: UIViewController {
             var priorityVC = self.storyboard?.instantiateViewControllerWithIdentifier("PriorityVC") as! PrioritiesViewController
             
             priorityVC.classList = classList
+            priorityVC.user_id = self.user_id
+            
+            SwiftSpinner.hide()
             
             self.navigationController?.pushViewController(priorityVC, animated: true)
         })

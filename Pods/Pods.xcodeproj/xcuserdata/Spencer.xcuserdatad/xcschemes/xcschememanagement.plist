@@ -9,7 +9,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CryptoSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-StudyCorner-IOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PusherSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReachabilitySwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Starscream.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftSpinner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,32 +42,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0FDED561166F95ECAD85BDBFACBBF13A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6380D52BA71832D3D8D29FD3555AAA9B</key>
+		<key>471F867894DC95AF510E863BA4196A15</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>709C2DFF1C06A51F6E4C653FE8A0A462</key>
+		<key>65C755D8B0A6B5ED5F0D98382E282714</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BE2D59EB8D2F667E25C153EB8455588</key>
+		<key>66F0E754B538CE1A8BCC00BC84673B87</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A76253A0ED5E599C930DEC6A9BA9963B</key>
+		<key>B490D1454195AAE2BEE5D9EBB37EFCEB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BBF71F001DB10958FE1BC0614A2E954E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

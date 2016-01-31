@@ -89,6 +89,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-StudyCorner-IOS/PusherSwift.framework"
   install_framework "Pods-StudyCorner-IOS/ReachabilitySwift.framework"
   install_framework "Pods-StudyCorner-IOS/Starscream.framework"
+  install_framework "Pods-StudyCorner-IOS/SwiftSpinner.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-StudyCorner-IOS/Alamofire.framework"
@@ -96,4 +97,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-StudyCorner-IOS/PusherSwift.framework"
   install_framework "Pods-StudyCorner-IOS/ReachabilitySwift.framework"
   install_framework "Pods-StudyCorner-IOS/Starscream.framework"
+  install_framework "Pods-StudyCorner-IOS/SwiftSpinner.framework"
 fi

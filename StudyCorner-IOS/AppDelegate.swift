@@ -19,13 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func switchToTabBar(){
+    func switchToTabBar(user_id : String) {
         
         // get your storyboard
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // instantiate your desired ViewController
-        let rootController = storyboard.instantiateViewControllerWithIdentifier("DashboardVC") as! DashboardViewController
+        let rootController = storyboard.instantiateViewControllerWithIdentifier("DashboardTabBarController") as! DashboardTabBarController
+        rootController.user_id = user_id
         
         // Because self.window is an optional you should check it's value first and assign your rootViewController
         if let window = self.window {

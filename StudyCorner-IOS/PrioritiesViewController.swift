@@ -14,6 +14,7 @@ class PrioritiesViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet var tableInfoQuake: UITableView!
     
     var classList = [SchoolClass] ()
+    var user_id  : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +68,7 @@ class PrioritiesViewController: UIViewController, UITableViewDataSource, UITable
                     // properly stored in the datdabase
                     if post["success"].boolValue == true {
                         let myDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                        myDelegate.switchToTabBar()
+                        myDelegate.switchToTabBar(self.user_id)
                     }
                     else {
                         print("Error")

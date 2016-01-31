@@ -1,18 +1,23 @@
 //
-//  DashboardViewController.swift
+//  DashboardTabBarController.swift
 //  StudyCorner-IOS
 //
-//  Created by Aidan Gadberry on 1/29/16.
+//  Created by Spencer Albrecht on 1/30/16.
 //  Copyright © 2016 Brad Bernard. All rights reserved.
 //
 
 import UIKit
 
-class DashboardViewController: UITabBarController {
+class DashboardTabBarController: UITabBarController {
 
+    var user_id : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let homeVC : HomeViewController = self.viewControllers![0] as! HomeViewController
+        homeVC.user_id = user_id
+
         // Do any additional setup after loading the view.
     }
 
