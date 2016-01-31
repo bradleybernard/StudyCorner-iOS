@@ -45,6 +45,8 @@ class RegisterViewController: UIViewController {
             "gold_password": goldPassword.text!,
         ]
         
+        print(parameters)
+        
         Alamofire.request(.POST, "http://45.33.18.17/api/user/create", parameters: parameters)
             
             // Reads the response from the server after post

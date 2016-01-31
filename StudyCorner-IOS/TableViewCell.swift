@@ -12,6 +12,7 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var prioritySwitch: UISwitch!
     @IBOutlet weak var className: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +23,12 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    typealias SwitchCallback = (Bool) -> Void
+    var switchCallback: SwitchCallback?
+    
+    @IBAction func switchChangedState(sender: UISwitch) {
+        switchCallback?(sender.on)
+    }
+    
 }
