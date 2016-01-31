@@ -45,8 +45,6 @@ class RegisterViewController: UIViewController {
             "gold_password": goldPassword.text!,
         ]
         
-        print(parameters)
-        
         Alamofire.request(.POST, "http://45.33.18.17/api/user/create", parameters: parameters)
             
             // Reads the response from the server after post
@@ -66,8 +64,6 @@ class RegisterViewController: UIViewController {
                     // Conditional that checks if the user info has been
                     // properly stored in the datdabase
                     if post["success"].boolValue == true {
-                        
-                        print(post)
                         
                         // Changes view to the loading page
                         let loadingVC = self.storyboard!.instantiateViewControllerWithIdentifier("LoadingVC") as! LoadingViewController

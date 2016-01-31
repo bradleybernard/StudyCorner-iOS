@@ -42,22 +42,13 @@ class PrioritiesViewController: UIViewController, UITableViewDataSource, UITable
             ])
         }
         
-        print(dicts)
-    
-        
         let parameters = [
             "classes": dicts
         ]
         
-        print(parameters)
-        print(" ")
-        
         Alamofire.request(.POST, "http://45.33.18.17/api/user/priority", parameters: parameters)
             
-            .responseString { response in
-                print("Success: \(response.result.isSuccess)")
-                print("Response String: \(response.result.value)")
-            }
+            
             
             .responseJSON { response in
                 
@@ -75,11 +66,8 @@ class PrioritiesViewController: UIViewController, UITableViewDataSource, UITable
                     // Conditional that checks if the user info has been
                     // properly stored in the datdabase
                     if post["success"].boolValue == true {
-                        
-                        print(post)
-                        
-                       print("yay")
-                        
+                        let myDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                        myDelegate.switchToTabBar()
                     }
                     else {
                         print("Error")
