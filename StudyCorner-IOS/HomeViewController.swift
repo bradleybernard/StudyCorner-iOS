@@ -33,9 +33,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:  HomePageCell = self.sessionsTableView.dequeueReusableCellWithIdentifier("HomePageCell") as! HomePageCell
         
-        cell.time.text = sessions[indexPath.row].time
+        cell.time.text = sessions[indexPath.row].time_start
         cell.classTitle.text = sessions[indexPath.row].title
-        cell.peopleCount.text = String(sessions[indexPath.row].people)
+        cell.peopleCount.text = String(sessions[indexPath.row].going_count)
         cell.location.text = sessions[indexPath.row].location
         
         return cell
@@ -88,21 +88,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         
                         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                         
-                        let adate = dateFormatter.dateFromString(subJson["time_start"].stringValue)!
+                        let start_time = dateFormatter.dateFromString(subJson["time_start"].stringValue)!
+                        let create_time = dateFormatter.dateFromString(subJson["created_at"].stringValue)!
+                        let update_time = dateFormatter.dateFromString(subJson["updated_at"].stringValue)!
                         
                         dateFormatter.timeStyle = .ShortStyle
                         dateFormatter.dateStyle = .NoStyle
                         
-                        let time_start = dateFormatter.stringFromDate(adate)
+                        let time_start = dateFormatter.stringFromDate(start_time)
+                        let created_at = dateFormatter.stringFromDate(create_time)
+                        let updated_at = dateFormatter.stringFromDate(update_time)
                         
-//                        if let datePublished = dateFormatter.dateFromString(subJson["start_time"].stringValue) {
-                            //println(datePublished)   // "2015-06-30 17:30:36 +0000" dateFormatter.stringFromDate(datePublished)
-                            self.sessions.append(
-                                SchoolSession(title: subJson["title"].stringValue, location: subJson["location"].stringValue, time: time_start, people: subJson["going_count"].intValue)
-                            )
+                        self.sessions.append(
                             
-                            print(subJson["title"].stringValue)
-//                        }
+                            SchoolSession(created_at: created_at, title: subJson["title"].stringValue, details: subJson["details"].stringValue, latitude: subJson["latitude"].doubleValue, location: subJson["location"].stringValue, owner_id: subJson["owner_id"].intValue, priority: subJson["priority"].boolValue, going_count: subJson["going_count"].intValue, time_start: time_start, id: subJson["id"].intValue, updated_at: updated_at, longitude: subJson["longitude"].doubleValue, user_id: subJson["user_id"].intValue, time_end: subJson["time_end"].stringValue, class_id: subJson["class_id"].intValue, class_name: subJson["class_name"].stringValue, status: subJson["status"].intValue)
+                        )
+                        
+                        print(subJson["title"].stringValue)
                         
                     }
                     
