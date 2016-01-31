@@ -1,23 +1,25 @@
 //
-//  DashboardTabBarController.swift
+//  SessionViewController.swift
 //  StudyCorner-IOS
 //
-//  Created by Spencer Albrecht on 1/30/16.
+//  Created by Aidan Gadberry on 1/30/16.
 //  Copyright © 2016 Brad Bernard. All rights reserved.
 //
 
 import UIKit
 
-class DashboardTabBarController: UITabBarController {
+class SessionViewController: UIViewController {
 
-    var user_id : String!
+    var session: SchoolSession!
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let homeVC : HomeNavigationViewController = self.viewControllers![0] as! HomeNavigationViewController
-        homeVC.user_id = user_id
-
+        titleLabel.text = session.title
+        
         // Do any additional setup after loading the view.
     }
 
@@ -25,6 +27,7 @@ class DashboardTabBarController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

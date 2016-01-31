@@ -1,23 +1,20 @@
 //
-//  DashboardTabBarController.swift
+//  HomeNavigationViewController.swift
 //  StudyCorner-IOS
 //
-//  Created by Spencer Albrecht on 1/30/16.
+//  Created by Aidan Gadberry on 1/30/16.
 //  Copyright © 2016 Brad Bernard. All rights reserved.
 //
 
 import UIKit
 
-class DashboardTabBarController: UITabBarController {
-
-    var user_id : String!
+class HomeNavigationViewController: UINavigationController {
+    var user_id: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let homeVC : HomeNavigationViewController = self.viewControllers![0] as! HomeNavigationViewController
-        homeVC.user_id = user_id
-
+        let homeNavVC : HomeViewController = self.viewControllers[0] as! HomeViewController
+        homeNavVC.user_id = user_id
         // Do any additional setup after loading the view.
     }
 

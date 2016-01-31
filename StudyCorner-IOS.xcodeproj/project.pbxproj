@@ -20,9 +20,13 @@
 		B86802341C5C2E1E0069339D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86802321C5C2E1E0069339D /* Main.storyboard */; };
 		B86802361C5C2E1E0069339D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86802351C5C2E1E0069339D /* Assets.xcassets */; };
 		B86802391C5C2E1E0069339D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86802371C5C2E1E0069339D /* LaunchScreen.storyboard */; };
+		D10584751C5DDF470031E860 /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10584741C5DDF470031E860 /* HomeNavigationViewController.swift */; };
+		D10584771C5DE9420031E860 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10584761C5DE9420031E860 /* SessionTableViewCell.swift */; };
 		D119CEBB1C5CC6AD003EF77F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */; };
 		D119CEBD1C5CC9EA003EF77F /* SchoolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */; };
 		D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */; };
+		D15C37931C5DCBD300A47FF1 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C37921C5DCBD300A47FF1 /* TimeViewController.swift */; };
+		D15C37951C5DCD3700A47FF1 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C37941C5DCD3700A47FF1 /* SessionViewController.swift */; };
 		D1DF7BF31C5CA8C200F1EFDA /* swiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */; };
 		D1DF7BFB1C5CADA600F1EFDA /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DF7BF61C5CADA600F1EFDA /* home.png */; };
 		D1DF7BFC1C5CADA600F1EFDA /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DF7BF71C5CADA600F1EFDA /* location.png */; };
@@ -49,9 +53,13 @@
 		B86802381C5C2E1E0069339D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B868023A1C5C2E1E0069339D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE94B9E4E9671A3B65FF9D06 /* Pods-StudyCorner-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyCorner-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyCorner-IOS/Pods-StudyCorner-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		D10584741C5DDF470031E860 /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
+		D10584761C5DE9420031E860 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolClass.swift; sourceTree = "<group>"; };
 		D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		D15C37921C5DCBD300A47FF1 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		D15C37941C5DCD3700A47FF1 /* SessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftyJSON.swift; sourceTree = SOURCE_ROOT; };
 		D1DF7BF61C5CADA600F1EFDA /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		D1DF7BF71C5CADA600F1EFDA /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
@@ -103,6 +111,9 @@
 				B86802301C5C2E1E0069339D /* ViewController.swift */,
 				D1DF7BF21C5CA8C200F1EFDA /* swiftyJSON.swift */,
 				B86802321C5C2E1E0069339D /* Main.storyboard */,
+				D10584761C5DE9420031E860 /* SessionTableViewCell.swift */,
+				D10584741C5DDF470031E860 /* HomeNavigationViewController.swift */,
+				D15C37941C5DCD3700A47FF1 /* SessionViewController.swift */,
 				D119CEBA1C5CC6AD003EF77F /* TableViewCell.swift */,
 				D119CEBC1C5CC9EA003EF77F /* SchoolClass.swift */,
 				090A8A8A1C5C908B00BE6C49 /* LoadingViewController.swift */,
@@ -110,12 +121,13 @@
 				D13014901C5C34FE00ECD6C1 /* LandingViewController.swift */,
 				092BF0AE1C5D618B006CCFA0 /* PrioritiesViewController.swift */,
 				095B5DCC1C5DA8670064F657 /* HomePageCell.swift */,
+				095B5DCE1C5DAB840064F657 /* HomeViewController.swift */,
+				D15C37921C5DCBD300A47FF1 /* TimeViewController.swift */,
+				095B5DD01C5DAC670064F657 /* SchoolSession.swift */,
+				095B5DD61C5DB60A0064F657 /* DashboardTabBarController.swift */,
 				B86802351C5C2E1E0069339D /* Assets.xcassets */,
 				B86802371C5C2E1E0069339D /* LaunchScreen.storyboard */,
 				B868023A1C5C2E1E0069339D /* Info.plist */,
-				095B5DCE1C5DAB840064F657 /* HomeViewController.swift */,
-				095B5DD01C5DAC670064F657 /* SchoolSession.swift */,
-				095B5DD61C5DB60A0064F657 /* DashboardTabBarController.swift */,
 			);
 			path = "StudyCorner-IOS";
 			sourceTree = "<group>";
@@ -268,14 +280,18 @@
 				092BF0AF1C5D618B006CCFA0 /* PrioritiesViewController.swift in Sources */,
 				094FECE61C5C3B2000CD94F0 /* RegisterViewController.swift in Sources */,
 				D119CEBB1C5CC6AD003EF77F /* TableViewCell.swift in Sources */,
+				D10584771C5DE9420031E860 /* SessionTableViewCell.swift in Sources */,
+				D15C37951C5DCD3700A47FF1 /* SessionViewController.swift in Sources */,
 				D1DF7BF31C5CA8C200F1EFDA /* swiftyJSON.swift in Sources */,
 				B86802311C5C2E1E0069339D /* ViewController.swift in Sources */,
 				095B5DD71C5DB60A0064F657 /* DashboardTabBarController.swift in Sources */,
 				D119CEBD1C5CC9EA003EF77F /* SchoolClass.swift in Sources */,
 				090A8A8B1C5C908B00BE6C49 /* LoadingViewController.swift in Sources */,
+				D10584751C5DDF470031E860 /* HomeNavigationViewController.swift in Sources */,
 				095B5DCF1C5DAB840064F657 /* HomeViewController.swift in Sources */,
 				D13014911C5C34FE00ECD6C1 /* LandingViewController.swift in Sources */,
 				095B5DCD1C5DA8670064F657 /* HomePageCell.swift in Sources */,
+				D15C37931C5DCBD300A47FF1 /* TimeViewController.swift in Sources */,
 				095B5DD11C5DAC670064F657 /* SchoolSession.swift in Sources */,
 				B868022F1C5C2E1E0069339D /* AppDelegate.swift in Sources */,
 			);

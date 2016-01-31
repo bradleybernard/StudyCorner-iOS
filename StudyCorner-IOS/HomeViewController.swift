@@ -19,7 +19,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Study Sessions"
         print("loaded home")
         self.getSessions()
 
@@ -41,25 +41,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let sessionVC = self.storyboard?.instantiateViewControllerWithIdentifier("SessionViewController") as! SessionViewController
+        sessionVC.session = sessions[indexPath.row]
+        self.navigationController?.pushViewController(sessionVC, animated: true)
+    }
+    
     func getSessions()
     {
         print("before request")
-//        var json = JSON (data!)
-//        var classList = [SchoolClass]()
-//        print(json["message"])
-//        for (key,subJson):(String, JSON) in json["message"] {
-//            //Do something you want
-//            
-//            classList.append(SchoolClass(user_id: subJson["user_id"].stringValue, class_id: subJson["class_id"].stringValue,class_name: subJson["class_name"].stringValue, priority: subJson["priority"].boolValue))
-//        }
-//        
-//        // Changes view to the next page
-//        var priorityVC = self.storyboard?.instantiateViewControllerWithIdentifier("PriorityVC") as! PrioritiesViewController
-//        
-//        priorityVC.classList = classList
-//        
-//        SwiftSpinner.hide()
-
         
         let parameters = [
             "user_id": user_id,
@@ -121,6 +111,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         dispatch_async(dispatch_get_main_queue(), {
                              self.sessionsTableView.reloadData()
                             print(self.sessions.count)
+                            SwiftSpinner.hide()
                             });
                         });
                     

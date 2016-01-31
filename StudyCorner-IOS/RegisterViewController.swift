@@ -23,6 +23,9 @@ class RegisterViewController: UIViewController {
         
         self.title = "Register"
 
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true
         // Do any additional setup after loading the view.
     }
 
