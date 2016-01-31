@@ -44,6 +44,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let sessionVC = self.storyboard?.instantiateViewControllerWithIdentifier("SessionViewController") as! SessionViewController
         sessionVC.session = sessions[indexPath.row]
+        sessionVC.user_id = user_id
         self.navigationController?.pushViewController(sessionVC, animated: true)
     }
     
@@ -101,7 +102,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         
                         self.sessions.append(
                             
-                            SchoolSession(created_at: created_at, title: subJson["title"].stringValue, details: subJson["details"].stringValue, latitude: subJson["latitude"].doubleValue, location: subJson["location"].stringValue, owner_id: subJson["owner_id"].intValue, priority: subJson["priority"].boolValue, going_count: subJson["going_count"].intValue, time_start: time_start, id: subJson["id"].intValue, updated_at: updated_at, longitude: subJson["longitude"].doubleValue, user_id: subJson["user_id"].intValue, time_end: subJson["time_end"].stringValue, class_id: subJson["class_id"].intValue, class_name: subJson["class_name"].stringValue, status: subJson["status"].intValue)
+                            SchoolSession(created_at: created_at, title: subJson["title"].stringValue, details: subJson["details"].stringValue, latitude: subJson["latitude"].doubleValue, location: subJson["location"].stringValue, owner_id: subJson["owner_id"].intValue, priority: subJson["priority"].boolValue, going_count: subJson["going_count"].intValue, time_start: time_start, id: subJson["study_id"].intValue, updated_at: updated_at, longitude: subJson["longitude"].doubleValue, user_id: subJson["user_id"].intValue, time_end: subJson["time_end"].stringValue, class_id: subJson["class_id"].intValue, class_name: subJson["class_name"].stringValue, status: subJson["status"].intValue)
                         )
                         
                         print(subJson["title"].stringValue)

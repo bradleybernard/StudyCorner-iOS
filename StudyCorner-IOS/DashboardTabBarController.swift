@@ -16,8 +16,12 @@ class DashboardTabBarController: UITabBarController {
         super.viewDidLoad()
         
         let homeVC : HomeNavigationViewController = self.viewControllers![0] as! HomeNavigationViewController
-        homeVC.user_id = user_id
-
+       // homeVC.user_id = user_id
+         homeVC.user_id = "1"
+        
+        let addVC : AddViewController = self.viewControllers![1] as! AddViewController
+        //addVC.user_id = user_id
+        addVC.user_id = "1"
         // Do any additional setup after loading the view.
     }
 
