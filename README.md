@@ -1,4 +1,4 @@
-# StudyCorner-IOS
+# StudyCorner-iOS
 A iPhone application coded at Hack UCSC 2016 that lets UCSC students post a study session and all students in that class will get notified if they are within a certain radius. 
 
 ### Team Members:
