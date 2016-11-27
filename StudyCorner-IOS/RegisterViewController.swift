@@ -9,8 +9,8 @@
 import UIKit
 import Alamofire
 
-class RegisterViewController: UIViewController {
-
+class RegisterViewController: UIViewController, UITextFieldDelegate {
+    
     // Fields
     @IBOutlet weak var cruzID: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -21,14 +21,37 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
+        cruzID.delegate = self
+        cruzID.tag = 1
+        cruzID.autocorrectionType = .No
+        goldPassword.delegate = self
+        goldPassword.tag = 2
+        goldPassword.autocorrectionType = .No
+        email.delegate = self
+        email.tag = 3
+        email.autocorrectionType = .No
+        password.delegate = self
+        password.tag = 4
+        password.autocorrectionType = .No
+        
         self.title = "Register"
-
+        
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = true
         // Do any additional setup after loading the view.
     }
-
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     // Auto-completes email field when button pressed
     @IBAction func completeEmail(sender: AnyObject) {
         email.text = cruzID.text!+"@ucsc.edu"
@@ -38,7 +61,20 @@ class RegisterViewController: UIViewController {
     @IBAction func completePass(sender: AnyObject) {
         password.text = goldPassword.text!
     }
-
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        let nextTag: NSInteger = textField.tag + 1;
+        // Try to find next responder
+        if let nextResponder: UIResponder! = textField.superview!.viewWithTag(nextTag){
+            nextResponder.becomeFirstResponder()
+        }
+        else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+        }
+        return false // We do not want UITextField to insert line-breaks.
+    }
+    
     // Submits all user data when pressed
     @IBAction func submitPressed(sender: AnyObject) {
         let parameters = [
@@ -59,7 +95,7 @@ class RegisterViewController: UIViewController {
                     print(response.result.error!)
                     return
                 }
-            
+                
                 // Runs if we get a response from the server
                 if let value: AnyObject = response.result.value {
                     let post = JSON(value)
@@ -88,5 +124,5 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }

@@ -43,8 +43,39 @@ class LandingViewController: UIViewController {
             "password": password.text!,
         ]
         
-        Alamofire.request(.POST, "http://45.33.18.17/api/user/create", parameters: parameters)
+        Alamofire.request(.POST, "http://45.33.18.17/api/user/login", parameters: parameters)
         // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
+            .responseJSON { response in
+                
+                guard response.result.error == nil else {
+                    // got an error in getting the data, need to handle it
+                    print("error calling GET on /priority")
+                    print(response.result.error!)
+                    return
+                }
+                
+                // Runs if we get a response from the server
+                if let value: AnyObject = response.result.value {
+                    let post = JSON(value)
+                    print(post)
+                    
+                    print("what is post success? ")
+                    print(post["success"].boolValue)
+                    
+                    // Conditional that checks if the user info has been
+                    // properly stored in the datdabase
+                    if post["success"].boolValue == true {
+                        let myDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                        myDelegate.switchToTabBar(post["id"].stringValue)
+                    }
+                    else {
+                        print("Error")
+                    }
+                    
+                }
+                
+                
+        }
     }
     
     // Changes view to the register page
